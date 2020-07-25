@@ -19,7 +19,7 @@ for baseball in baseballRank:
 
     #if th_tag is not None and td_tag is not None:
        #value = th_tag.text + " " + td_tag.text + " " + td_strong_tag.text    #value 변수 지정
-    if float(td_strong_tag) > 0.5:
-        #value = th_tag.text + " " + td_tag.text + " " + td_strong_tag.text  # value 변수 지정
-        #print (value)
-        print(th_tag, td_tag, td_strong_tag)
+    if float(td_strong_tag.text) > 0.5:
+        value = th_tag.text + " " + td_tag.text + " " + td_strong_tag.text  # value 변수 지정
+        print (value)
+        #print(th_tag, td_tag, td_strong_tag)
